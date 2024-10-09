@@ -3,5 +3,5 @@ import { database } from "../utils/constant.js";
 
 export const connectDB = () => {
   mongoose.connect(database);
-  console.log("MongoDB connected...");
+  console.log(`MongoDB connected...`);
 };
