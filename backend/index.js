@@ -3,7 +3,7 @@ import cors from "cors";
 
 import { portfolioRouter } from "./src/Routes/portfolioRouter.js";
 import { Port } from "./src/utils/constant.js";
-import { connectDB } from "./src/ConnectDB/ConnectDB.js";
+import connectDB from "./src/ConnectDB/ConnectDB.js";
 const app = express();
 let port = Port;
 connectDB();

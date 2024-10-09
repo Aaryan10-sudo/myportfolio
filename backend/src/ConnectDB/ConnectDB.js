@@ -1,4 +1,4 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 import { databaseUrl } from "../utils/constant.js";
 let connectDB = () => {
   mongoose.connect(databaseUrl);
