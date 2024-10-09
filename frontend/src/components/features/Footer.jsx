@@ -12,10 +12,6 @@ const Footer = () => {
   return (
     <footer className="bg-[url('/public/vector-dark-wallpaper-design.jpg')] bg-cover sm:h-[350px] h-[350px]">
       <center>
-        <p className="text-[10px] cursive text-white">
-          "This site is built using vite react, TailwindCSS , redux , express
-          and MongoDB"
-        </p>
         <p className="text-blue-500 pt-[10px] font-bold ">
           Fullstack Developer
         </p>

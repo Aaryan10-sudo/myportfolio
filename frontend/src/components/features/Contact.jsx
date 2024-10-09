@@ -11,7 +11,6 @@ const Contact = () => {
 
   let [createPortfolio, { isLoading, isError, error, data, isSuccess }] =
     useCreateMessageMutation();
-  console.log(data);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,7 +26,7 @@ const Contact = () => {
     {
       isSuccess
         ? toast.success(
-            `Message received successfully please check your inbox`,
+            `Message received successfully please check your mail`,
             setName(""),
             setEmail(""),
             setMessage("")
@@ -46,11 +45,11 @@ const Contact = () => {
           Contact Me
         </h1>
         <br />
-        <div className="flex sm:flex-row flex-col sm:gap-0 gap-[20px] justify-between">
+        <div className="flex md:flex-row flex-col sm:gap-0 gap-[20px] justify-between">
           <div className="">
             <form
               onSubmit={handleSubmit}
-              className="bg-[#DCDCDC] h-[450px] sm:w-[500px] w-[100%] p-[30px]"
+              className="bg-[#DCDCDC] h-[450px] md:w-[500px] w-[100%] p-[30px]"
             >
               <p className="font-manrope text-black text-[25px]">Message me</p>
               <br />
@@ -94,7 +93,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          <div className="w-[100%] sm:w-[600px]">
+          <div className="w-[100%] md:w-[600px]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14125.44136435104!2d85.35165633387003!3d27.737029619373317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1be5bea00987%3A0x70cf02a942554e97!2sKapan%2C%2044600!5e0!3m2!1sen!2snp!4v1727441862660!5m2!1sen!2snp"
               width="100%"
