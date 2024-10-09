@@ -33,7 +33,7 @@ const Skill = () => {
         </p>
 
         <img
-          src="/public/webdevelopment.gif"
+          src="webdevelopment.gif"
           className="h-[350px]  mt-[-50px] 2xl:h-[500px]"
         />
       </div>
