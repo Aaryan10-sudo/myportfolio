@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 // Define a service using a base URL and expected endpoints
 export const portfolioApi = createApi({
   reducerPath: "portfolio",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:9999" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://aaryan-4p8v.onrender.com" }),
   endpoints: (builder) => ({
     createMessage: builder.mutation({
       query: (data) => {
