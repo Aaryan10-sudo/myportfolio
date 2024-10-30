@@ -41,9 +41,7 @@ const Contact = () => {
     <>
       <div id="contact">
         <ToastContainer />
-        <h1 className="font-Sora font-extrabold text-[40px] 2xl:text-[60px]">
-          Contact Me
-        </h1>
+        <h1 className="font-Sora font-extrabold text-[40px] ">Contact Me</h1>
         <br />
         <div className="flex md:flex-row flex-col sm:gap-0 gap-[20px] justify-between">
           <div className="">

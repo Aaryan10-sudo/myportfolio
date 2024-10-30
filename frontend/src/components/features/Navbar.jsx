@@ -16,7 +16,7 @@ const Navbar = ({ menu, setMenu }) => {
     }
   }, [mode]);
   return (
-    <nav className="2xl:h-[100px] font-bold flex justify-between border-2 border-transparent border-b-neutral-600 h-[70px] items-center ">
+    <nav className=" font-bold flex justify-between border-2 border-transparent border-b-neutral-600 h-[70px] items-center ">
       <BiMenu
         className="text-[20px] sm:hidden cursor-pointer"
         onClick={() => {
@@ -27,11 +27,11 @@ const Navbar = ({ menu, setMenu }) => {
         onClick={() => {
           navigate("/");
         }}
-        className="cursor-pointer 2xl:text-[30px]"
+        className="cursor-pointer "
       >
         Aaryan Sharma
       </h1>
-      <ul className="sm:inline-flex gap-[30px] font-normal cursor-pointer hidden 2xl:text-[20px]">
+      <ul className="sm:inline-flex gap-[30px] font-normal cursor-pointer hidden ">
         <a href="/" className="hover:text-blue-400">
           Home
         </a>
@@ -52,9 +52,9 @@ const Navbar = ({ menu, setMenu }) => {
         className="h-[30px] w-[30px] place-content-center items-center flex justify-center"
       >
         {mode ? (
-          <MdOutlineLightMode className="text-[20px] 2xl:text-[30px]" />
+          <MdOutlineLightMode className="text-[20px] " />
         ) : (
-          <MdDarkMode className="text-[20px] 2xl:text-[30px]" />
+          <MdDarkMode className="text-[20px] " />
         )}
       </button>
     </nav>
