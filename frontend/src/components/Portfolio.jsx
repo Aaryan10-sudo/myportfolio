@@ -8,12 +8,13 @@ import Contact from "./features/Contact";
 import Navbar from "./features/Navbar";
 import Service from "./features/Service";
 import Skill from "./features/Skill";
+import { TypeAnimation } from "react-type-animation";
 
 const Portfolio = () => {
   let [menu, setMenu] = useState(false);
   let navigate = useNavigate("");
   return (
-    <main className="md:mx-[60px] mx-[15px] relative">
+    <main className="md:mx-[60px] mx-[15px] relative ">
       <Navbar menu={menu} setMenu={setMenu} />
       {menu ? (
         <div className="bg-[white] h-[200px] w-[200px] absolute rounded-tr-xl rounded-br-xl transition-all ease-linear z-10 text-black cursor-pointer">
@@ -60,10 +61,15 @@ const Portfolio = () => {
           </h1>
           <br />
           <p className="">
-            Hello Everyone I'm Aaryan Sharma. A passionate learner and MERN
-            stack developer looking forward for a fullstack project. My skill
-            includes Express / MongoDB for Backend , React and TailwindCSS for
-            frontend{" "}
+            <TypeAnimation
+              sequence={[
+                ` Hello Everyone I'm Aaryan Sharma. A passionate learner and MERN
+              stack developer. My skill
+              includes Express / MongoDB for Backend , React and TailwindCSS for
+              frontend . . .`,
+              ]}
+              speed={50}
+            ></TypeAnimation>
           </p>
           <br />
           <div className="flex gap-[100px] mt-[10px] ">
@@ -80,14 +86,29 @@ const Portfolio = () => {
           </div>
           <br />
           <br />
-          <div className="flex  text-[30px] gap-[20px] cursor-pointer">
+          <div className="flex  text-[30px] gap-[20px] cursor-pointer mx-[10px]">
             <a href="https://www.facebook.com/profile.php?id=100016114060902">
               <FaFacebook className="hover:scale-110 transform ease-in-out transition-all " />
             </a>
-            <MdWhatsapp className="hover:scale-110 transform ease-in-out transition-all rounded-xl" />
-            <LiaLinkedin className="hover:scale-110 transform ease-in-out transition-all " />
-            <CiInstagram className="hover:scale-110 transform ease-in-out transition-all rounded-xl text-bold" />
-            <FaGithub className="hover:scale-110 transform ease-in-out transition-all" />
+            <a
+              href="https://wa.me/9761637657?text=Hello"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MdWhatsapp
+                className="hover:scale-110 transform ease-in-out transition-all rounded-xl"
+                size={30}
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/aaryan-sharma-6a508a317/">
+              <LiaLinkedin className="hover:scale-110 transform ease-in-out transition-all " />
+            </a>
+            <a href="https://www.instagram.com/aaryansh1011/">
+              <CiInstagram className="hover:scale-110 transform ease-in-out transition-all rounded-xl text-bold" />
+            </a>
+            <a href="https://github.com/Aaryan10-sudo">
+              <FaGithub className="hover:scale-110 transform ease-in-out transition-all" />
+            </a>
           </div>
         </div>
 

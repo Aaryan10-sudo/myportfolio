@@ -44,6 +44,7 @@ const Navbar = ({ menu, setMenu }) => {
         <a href="#contact" className="hover:text-blue-400">
           Contact
         </a>
+        <a>Project</a>
       </ul>
       <button
         onClick={() => {
