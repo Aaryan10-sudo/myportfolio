@@ -12,17 +12,7 @@ export default function ClientLayout({
 }) {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 7000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  return loading ? (
-    <Loader />
-  ) : (
+  return (
     <>
       <Navbar />
       {children}
