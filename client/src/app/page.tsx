@@ -1,34 +1,48 @@
-"use client";
-import AnimatedRobo from "@/animation/roboAnimation";
-import AnimatedTest from "@/animation/testAnimation";
-import Blog from "@/components/Blog";
-import Contact from "@/components/Contact";
-import Hero from "@/components/Hero";
-import Project from "@/components/Project";
-import Skills from "@/components/Skills";
-import Timeline from "@/components/Timeline";
-import { store } from "@/store/store";
-import { Provider } from "react-redux";
+import HomePage from "@/components/Homepage";
 
-export default function Home() {
-  return (
-    <main
-      className="flex flex-col items-center justify-center"
-      style={{
-        backgroundImage: `radial-gradient(circle at 4px 4px, rgba(255, 255, 255, 0.06) 3px, transparent 0)`,
-        backgroundSize: "8px 8px",
-        backgroundRepeat: "repeat",
-      }}
-    >
-      <Provider store={store}>
-        <Hero />
+export const metadata = {
+  title: "Aaryan Sharma | FullStack Developer",
+  description:
+    "Portfolio of Aaryan Sharma - showcasing projects built with React, Node.js, and MongoDB.",
+  keywords: [
+    "MERN stack",
+    "portfolio",
+    "web developer",
+    "React",
+    "Next.js",
+    "Express.js",
+    "Node.js",
+    "PostgreSQL",
+  ],
+  authors: [{ name: "Aaryan Sharma" }],
+  openGraph: {
+    title: "Aaryan Sharma | MERN Stack Developer",
+    description:
+      "Explore the modern projects and skills of a full-stack web developer.",
+    url: "https://aryansharma.com.np",
+    siteName: "Portfolio",
+    images: [
+      {
+        url: "https://aryansharma.com.np/portfolio.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Portfolio preview image",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aaryan Sharma | MERN Stack Developer",
+    description:
+      "Explore the modern projects and skills of a full-stack web developer.",
+    images: ["https://aryansharma.com.np/portfolio.jpg"],
+  },
+  alternates: {
+    canonical: "https://aryansharma.com.np",
+  },
+};
 
-        <Skills />
-        <Timeline />
-        <Project />
-        <Contact />
-        <Blog />
-      </Provider>
-    </main>
-  );
+export default function Page() {
+  return <HomePage />;
 }

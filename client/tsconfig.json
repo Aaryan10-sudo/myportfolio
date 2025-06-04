@@ -27,7 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/animation/roboAnimation.tsx"
+    "src/animation/roboAnimation.tsx",
+    "src/components/Oddo.jsx"
   ],
   "exclude": ["node_modules"]
 }

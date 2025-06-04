@@ -14,8 +14,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aaryan Sharma",
-  description: "Fullstack Developer",
+  title: {
+    default: "Aryan Sharma | MERN Stack Developer",
+    template: "%s | Aryan Sharma",
+  },
+  description: "Full-stack MERN developer portfolio website.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
