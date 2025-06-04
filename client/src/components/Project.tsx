@@ -48,7 +48,7 @@ const Project = () => {
         <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
           <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-normal  md:text-6xl md:tracking-tight font-sora">
             <span>Showcasing</span>{" "}
-            <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline">
+            <span className="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-[#0066ff] lg:inline">
               My Works
             </span>{" "}
             <span>That Speak for Themselves</span>
@@ -77,7 +77,7 @@ const Project = () => {
                 <SwiperSlide key={index}>
                   <div className="relative overflow-hidden ">
                     <div className="relative overflow-hidden">
-                      <div className="flex items-center flex-none px-4 bg-purple-400 rounded-b-none h-11 rounded-xl">
+                      <div className="flex items-center flex-none px-4 bg-[#0066ff] rounded-b-none h-11 rounded-xl">
                         <div className="flex space-x-1.5">
                           <div className="w-3 h-3 border-2 border-white rounded-full"></div>
                           <div className="w-3 h-3 border-2 border-white rounded-full"></div>
@@ -86,7 +86,7 @@ const Project = () => {
                       </div>
                       <img src={project.imageUrl} alt={project.title} />
                     </div>
-                    <div className="p-4 bg-purple-400 rounded-b-xl text-white">
+                    <div className="p-4 bg-[#0066ff] rounded-b-xl text-white">
                       <Link
                         href={project.url}
                         className="font-semibold text-lg underline"

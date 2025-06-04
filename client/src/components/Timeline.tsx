@@ -65,7 +65,7 @@ const Timeline: React.FC = () => {
       <div className="container max-w-5xl sm:px-4 py-12 mx-auto">
         <div className="grid gap-4 mx-4 sm:grid-cols-12">
           <div className="col-span-12 sm:col-span-3">
-            <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-violet-600">
+            <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-[#0066ff]">
               <h3 className="text-3xl font-semibold">My Journey</h3>
               <span className="text-sm font-bold tracking-wider uppercase text-gray-600">
                 Have a look at my Fullstack journey..
@@ -77,7 +77,7 @@ const Timeline: React.FC = () => {
               {timelineData.map((item, index) => (
                 <div
                   key={index}
-                  className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-violet-600"
+                  className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-[#0066ff]"
                   data-aos="fade-up" // AOS animation when the element enters the viewport
                   data-aos-offset="200" // Offset before the animation starts
                 >

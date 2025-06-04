@@ -4,6 +4,7 @@ import Location from "@/ui/Location";
 import Phone from "@/ui/Phone";
 import React, { useState } from "react";
 import Mail from "../ui/Mail";
+import AnimatedContact from "@/animation/contactAnimation";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -20,6 +21,9 @@ const Contact = () => {
           Get in touch
         </h1>
         <p>Fill in the form to start a conversation</p>
+        <span className="absolute mt-[200px]">
+          <AnimatedContact />
+        </span>
         <span className="flex flex-col gap-3">
           <p className="flex items-center gap-2">
             <Location /> Fake Address , Kathmandu
