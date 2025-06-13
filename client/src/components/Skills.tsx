@@ -17,7 +17,10 @@ const Skills = () => {
   return (
     <section className="p-6 pt-24 " id="skills">
       <div className="container p-4 mx-auto text-center">
-        <h2 className="sm:text-4xl font-bold text-2xl">
+        <h2
+          className="sm:text-4xl font-bold text-2xl text-transparent bg-clip-text"
+          style={{ backgroundImage: "url('/spidermanbg.webp')" }}
+        >
           Technologies & Tools I Work With
         </h2>
       </div>

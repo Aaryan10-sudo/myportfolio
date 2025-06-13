@@ -13,6 +13,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#AA2F1E",
       },
       fontFamily: {
         manrope: ["Manrope", "sans-serif"],

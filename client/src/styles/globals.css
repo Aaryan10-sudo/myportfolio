@@ -32,3 +32,9 @@ body {
 .custom-rounded {
   border-radius: 24% 76% 66% 34% / 49% 51% 49% 51%;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ef4444;
+  font-size: 2rem; /* adjust size if needed */
+}

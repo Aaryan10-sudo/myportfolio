@@ -10,9 +10,7 @@ const Footer = () => {
   return (
     <footer className="bg-cover bg-center shadow-xl  sm:h-auto h-[350px] pb-[10px] ">
       <center>
-        <p className="text-[#0066ff] pt-[10px] font-bold ">
-          Fullstack Developer
-        </p>
+        <p className="text-primary pt-[10px] font-bold ">Fullstack Developer</p>
         <h1 className="font-extrabold text-[20px] ">Aaryan Sharma</h1>
         <br />
         <p className="sm:w-[500px] w-[400px] text-center">
@@ -22,11 +20,11 @@ const Footer = () => {
         </p>
         <br />
         <div className="flex justify-center">
-          <div className="bg-[#367ce6f3] w-[200px] h-[40px] text-center items-center flex justify-between font-bold text-white px-[20px]">
+          <div className="bg-primary bg-center w-[200px] h-[40px] text-center items-center flex justify-between font-bold text-white px-[20px]">
             <p>GET IN TOUCH</p>
           </div>
           <div className="group flex items-center">
-            <button className="bg-[#0066ff] w-[50px] group-hover:w-[170px] h-[40px] text-center flex items-center justify-center text-white text-[20px] transition-all ease-linear duration-300">
+            <button className="bg-[url('/spidermanbg.webp')] bg-center w-[50px] group-hover:w-[170px] h-[40px] text-center flex items-center justify-center text-white text-[20px] transition-all ease-linear duration-300">
               <div className="flex gap-[20px] ml-2 opacity-0 group-hover:opacity-100 transition-opacity ease-linear duration-300 mx-[10px]">
                 <Facebook />
 

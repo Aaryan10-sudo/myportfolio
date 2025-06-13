@@ -8,6 +8,7 @@ import LinkedIn from "@/ui/LinkedIn";
 import Light from "@/ui/Light";
 import Dark from "@/ui/Dark";
 import Link from "next/link";
+import Spider from "@/ui/Spider";
 
 const navLinksData = [
   { href: "/", label: "Home" },
@@ -38,16 +39,16 @@ const Navbar = () => {
   useEffect(() => {
     if (mode) {
       document.body.style.backgroundColor = "#000";
-      document.body.style.color = "white";
+      document.body.style.color = "#fff";
     } else {
-      document.body.style.backgroundColor = "#faf9f6";
-      document.body.style.color = "black";
+      document.body.style.backgroundColor = "#000";
+      document.body.style.color = "#fff";
     }
   }, [mode]);
 
   const updatePillProperties = (itemEl: HTMLLIElement | null) => {
     if (itemEl) {
-      const pillBgColor = mode ? "rgb(55 65 81)" : "rgb(209 213 219)";
+      const pillBgColor = mode ? "#AA2F1E" : "rgb(209 213 219)";
 
       setMagicPillStyle({
         left: itemEl.offsetLeft,
@@ -105,10 +106,11 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 w-full bg-transparent backdrop-blur-xl">
       <div className="flex items-center justify-between sm:px-7 px-3 max-w-[1700px] h-[80px] mx-auto">
         <Link
-          className="cursor-pointer tracking-wide font-sora font-bold"
+          className="cursor-pointer tracking-wide font-sora font-bold flex items-center gap-2"
           href="/"
           onClick={handleLogoClick}
         >
+          <Spider />
           Aaryan Sharma
         </Link>
 

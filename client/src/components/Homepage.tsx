@@ -12,14 +12,7 @@ import { Provider } from "react-redux";
 
 export default function HomePage() {
   return (
-    <main
-      className="flex flex-col items-center justify-center"
-      style={{
-        backgroundImage: `radial-gradient(circle at 4px 4px, rgba(255, 255, 255, 0.06) 3px, transparent 0)`,
-        backgroundSize: "8px 8px",
-        backgroundRepeat: "repeat",
-      }}
-    >
+    <main className="flex flex-col items-center justify-center bg-black">
       <Provider store={store}>
         <Hero />
 
@@ -27,7 +20,6 @@ export default function HomePage() {
         <Timeline />
         <Project />
         <Contact />
-        <Blog />
       </Provider>
     </main>
   );

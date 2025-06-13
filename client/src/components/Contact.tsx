@@ -21,9 +21,6 @@ const Contact = () => {
           Get in touch
         </h1>
         <p>Fill in the form to start a conversation</p>
-        <span className="absolute mt-[200px]">
-          <AnimatedContact />
-        </span>
         <span className="flex flex-col gap-3">
           <p className="flex items-center gap-2">
             <Location /> Fake Address , Kathmandu
@@ -66,7 +63,7 @@ const Contact = () => {
             placeholder="Message..."
           />
         </span>
-        <button className="bg-violet-600 text-white w-[100px] self h-[35px] font-bold rounded-sm md:self-end">
+        <button className="bg-primary text-white w-[100px] self h-[35px] font-bold rounded-sm md:self-end">
           Submit
         </button>
       </form>
