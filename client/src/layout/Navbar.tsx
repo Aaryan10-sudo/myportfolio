@@ -230,7 +230,7 @@ const Navbar = () => {
                     ${
                       index === activeIndex
                         ? mode
-                          ? "text-purple-400 font-semibold"
+                          ? "text-primary font-semibold"
                           : "text-[#0066ff] font-semibold"
                         : mode
                         ? "hover:text-gray-300"

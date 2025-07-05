@@ -53,6 +53,24 @@ const timelineData: TimelineItem[] = [
     description:
       "Recognizing the growing demand for Next.js, I took the initiative to learn it through its official documentation, along with Tailwind CSS and TypeScript. I applied this knowledge to develop my ongoing project, nexo-footwears.vercel.app.",
   },
+  {
+    title: "Docker",
+    date: "Jan 2025",
+    description:
+      "To streamline development and deployment, I learned Docker by following its official documentation and hands-on tutorials. I containerized several of my projects, making them easier to manage and deploy across different environments.",
+  },
+  {
+    title: "Nginx",
+    date: "Feb 2025",
+    description:
+      "I explored Nginx to understand web server configuration and reverse proxying. I used Nginx to serve my React and Next.js applications, optimizing performance and enabling secure, scalable deployments.",
+  },
+  {
+    title: "AWS",
+    date: "Mar 2025",
+    description:
+      "To gain cloud experience, I started learning AWS services such as EC2, S3, and Lambda. I deployed full-stack applications on AWS, leveraging its scalability and reliability to deliver robust solutions.",
+  },
 ];
 
 const Timeline: React.FC = () => {
@@ -61,7 +79,7 @@ const Timeline: React.FC = () => {
   }, []);
 
   return (
-    <section className="flex justify-center items-center">
+    <section className="flex justify-center items-center w-full">
       <div className="container max-w-5xl sm:px-4 py-12 mx-auto">
         <div className="grid gap-4 mx-4 sm:grid-cols-12">
           <div className="col-span-12 sm:col-span-3">
@@ -71,7 +89,8 @@ const Timeline: React.FC = () => {
                 Have a look at my Fullstack journey..
               </span>
             </div>
-            <img src="/spiderverseman.png" />
+            <img src="/spiderverseman.png" className="sm:h-auto h-[400px]" />
+            <img src="/jhirjhirbg.webp" className="absolute hidden sm:block" />
           </div>
           <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
             <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-300">

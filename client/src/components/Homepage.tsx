@@ -1,6 +1,7 @@
 "use client";
 import AnimatedRobo from "@/animation/roboAnimation";
 import AnimatedTest from "@/animation/testAnimation";
+import BlogSection from "@/components/Blog";
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
@@ -20,6 +21,8 @@ export default function HomePage() {
         <Timeline />
         <Project />
         <Contact />
+
+        <BlogSection />
       </Provider>
     </main>
   );

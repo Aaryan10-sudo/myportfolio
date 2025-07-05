@@ -8,7 +8,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-cover bg-center shadow-xl  sm:h-auto h-[350px] pb-[10px] ">
+    <footer className="bg-cover bg-center shadow-xl  sm:h-auto h-[350px] pb-[10px] shadow-primary">
       <center>
         <p className="text-primary pt-[10px] font-bold ">Fullstack Developer</p>
         <h1 className="font-extrabold text-[20px] ">Aaryan Sharma</h1>
@@ -46,7 +46,7 @@ const Footer = () => {
           <p className="text-[12px]">Kathmandu , Nepal</p>
         </div>
         <br />
-        <p className="text-sm text-[#0066ff]">
+        <p className="text-sm text-primary">
           &copy; {new Date().getFullYear()} Aaryan Sharma. All rights reserved.
         </p>
       </center>

@@ -43,7 +43,7 @@ const Project = () => {
   ];
 
   return (
-    <section className="pt-24 w-full" id="projects">
+    <section className="pt-24 w-full " id="projects">
       <div className="px-5 sm:px-12 md:mx-auto max-w-7xl">
         <div className="w-full mx-auto text-left md:w-11/12 xl:w-9/12 md:text-center">
           <h1 className="mb-8 text-4xl font-extrabold leading-none tracking-normal  md:text-6xl md:tracking-tight font-sora">
@@ -93,7 +93,9 @@ const Project = () => {
                       >
                         {project.title}
                       </Link>
-                      <p>{project.description}</p>
+                      <p className="line-clamp-2 sm:line-clamp-1">
+                        {project.description}
+                      </p>
                     </div>
                   </div>
                 </SwiperSlide>

@@ -38,3 +38,27 @@ body {
   color: #ef4444;
   font-size: 2rem; /* adjust size if needed */
 }
+
+.custom-shape-divider-bottom-1750171640 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1750171640 svg {
+  position: relative;
+  display: block;
+  width: calc(119% + 1.3px);
+  height: 133px;
+  /* shadow upwards since it's rotated */
+}
+
+.custom-shape-divider-bottom-1750171640 .shape-fill {
+  fill: #000;
+  box-shadow: #ffffff;
+  filter: drop-shadow(10px -10px 20px #aa2f1e);
+}
